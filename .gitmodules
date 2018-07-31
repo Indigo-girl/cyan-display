@@ -1,0 +1,3 @@
+[submodule "cyan"]
+	path = cyan
+	url = git@github.com:Indigo-girl/cyan.git
