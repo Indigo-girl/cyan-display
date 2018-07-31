@@ -1,0 +1,12 @@
+#ignore some creator folder
+temp/
+local/
+build/
+library/
+
+#ignore npm packages
+node_modules/
+package-lock.json
+
+#ignore vscode plugin&config
+.vscode/
