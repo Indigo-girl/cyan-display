@@ -7,11 +7,11 @@
 */
 import BezierBuilder from '../../cyan/src/logic/trace/BezierBuilder';
 
-function showLine(target, name, descriptor){
+// 所有的测试注解发布后都会被移除
+function test(target, name, descriptor){
     const fn = descriptor.value;
     descriptor.value = function(){
-        console.log(name);
-        if(this._trace){
+        if(this.showTrace && this._trace){
             const _node = cc.instantiate(this.node);
             _node.getComponent('Bezier').destroy();
             _node.parent = this.node.parent;
@@ -26,9 +26,14 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        midPoints: [cc.Vec2],
+        midPoints: {
+            type: [cc.Vec2],
+            default: [],
+            tooltip: '贝塞尔曲线的中间点(不包含起点和终点),使用以起点到终点的方向为x轴正方向,以起点到终点的长度为单位向量长度构建的坐标系'
+        },
         targetPos: cc.Vec2,
-        duration: 60
+        duration: 60,
+        showTrace: false
     },
 
     start(){
@@ -43,7 +48,7 @@ cc.Class({
         this._trace = BezierBuilder.getTraceFromNomalize(mypoints, this.duration);
     },
 
-    // @showLine
+    @test
     update(){
         if(this._trace){
             const pos = this._trace.nextPos();

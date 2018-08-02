@@ -248,19 +248,14 @@
       "__id__": 4
     },
     "_enabled": true,
-    "midPoints": [
-      {
-        "__type__": "cc.Vec2",
-        "x": 0.5,
-        "y": -3
-      }
-    ],
+    "midPoints": [],
     "targetPos": {
       "__type__": "cc.Vec2",
       "x": 200,
-      "y": 400
+      "y": 200
     },
-    "duration": 60
+    "duration": 20,
+    "showTrace": true
   },
   {
     "__type__": "cc.Sprite",
