@@ -117,7 +117,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "KM",
+    "_name": "Display",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -181,7 +181,7 @@
     "loop": true,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "2d5787b9-7247-4661-8912-3cf015e5539e"
+      "__uuid__": "31539345-6211-4807-8cb6-1ef517a73f32"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
