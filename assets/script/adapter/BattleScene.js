@@ -6,7 +6,7 @@
  * @desc [description]
 */
 import ViewEntity from '../../cyan/src/view/ViewEntity';
-import LogicWorld from '../../cyan/src/logic/context/LogicWorld';
+import LogicWorld from '../../cyan/src/lib/LogicWorld';
 import pubfunc from '../../cyan/src/logic/utils/pubfunc';
 
 cc.Class({
