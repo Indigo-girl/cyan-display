@@ -176,12 +176,12 @@
     },
     "_enabled": true,
     "_paused": false,
-    "defaultSkin": "ZGL03",
-    "defaultAnimation": "attack01",
+    "defaultSkin": "JK04",
+    "defaultAnimation": "",
     "loop": true,
     "_premultipliedAlpha": false,
     "_N$skeletonData": {
-      "__uuid__": "5458b110-6d73-40fd-ae6a-cd9046325b18"
+      "__uuid__": "c7ef9d79-ac68-48c2-af11-524008e49645"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
