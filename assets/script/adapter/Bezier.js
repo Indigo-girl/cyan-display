@@ -5,7 +5,7 @@
  * @modify date 2018-08-01 06:03:48
  * @desc [description]
 */
-import BezierBuilder from '../../cyan/src/logic/trace/BezierBuilder';
+import BezierBuilder from '../../cyan/src/view/trace/BezierBuilder';
 
 // 所有的测试注解发布后都会被移除
 function test(target, name, descriptor){
