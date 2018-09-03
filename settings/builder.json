@@ -28,7 +28,7 @@
   "renderMode": "0",
   "startScene": "efa42c85-cfa6-4bc8-a35b-7b39e8168eec",
   "title": "cyan-display",
-  "webOrientation": "auto",
+  "webOrientation": "landscape",
   "wechatgame": {
     "REMOTE_SERVER_ROOT": "",
     "appid": "wx6ac3f5090a6b99c5",
