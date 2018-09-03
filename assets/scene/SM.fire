@@ -432,8 +432,8 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_actualFontSize": 20,
-    "_fontSize": 20,
+    "_actualFontSize": 28,
+    "_fontSize": 28,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": null,
@@ -443,7 +443,7 @@
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
-    "_N$overflow": 1
+    "_N$overflow": 0
   },
   {
     "__type__": "cc.Node",
@@ -465,9 +465,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 0,
-      "g": 0,
-      "b": 0,
+      "r": 221,
+      "g": 56,
+      "b": 56,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -478,7 +478,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
+      "width": 0,
       "height": 40
     },
     "_rotationX": 0,
@@ -487,7 +487,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -63,
+      "x": 0,
       "y": 375
     },
     "_skewX": 0,
