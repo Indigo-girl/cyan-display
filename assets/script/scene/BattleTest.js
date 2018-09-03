@@ -11,24 +11,39 @@ cc.Class({
     properties: {
         enemyEditBox: cc.EditBox,
         heroEditBox: cc.EditBox,
+        tipsLabel: cc.Label,
     },
 
     onLoad(){
+        this.node.on(cc.Node.EventType.TOUCH_END, (event) => {
+            const pos = this.node.convertTouchToNodeSpaceAR(event.touch);
+            if(this._placeFlag){
+                this.addEntity(pos);
+                this._placeFlag = false;
+                this.tipsLabel.string = '';
+            }
+        });
+    },
 
+    addEntity(pos){
+        const world = this.node.getComponent('ViewWorld');
+        let entity = world.addConfigEnetity(this._toPlaceId, this._toPlaceCamp);
+        entity.setPosition(pos);
+        return entity;
     },
 
     addHero() {
-        const world = this.node.getComponent('ViewWorld');
-        let entity = world.addConfigEnetity(this.heroEditBox.string.trim(), 1);
-        entity.setPosition(this.getRandPos());
-        return entity;
+        this._placeFlag = true;
+        this.tipsLabel.string = '请放置英雄';
+        this._toPlaceCamp = 1;
+        this._toPlaceId = this.heroEditBox.string.trim();
     },
 
     addEnemy() {
-        const world = this.node.getComponent('ViewWorld');
-        let entity = world.addConfigEnetity(this.enemyEditBox.string.trim(), 2);
-        entity.setPosition(this.getRandPos());
-        return entity;
+        this._placeFlag = true;
+        this.tipsLabel.string = '请放置敌人';
+        this._toPlaceCamp = 2;
+        this._toPlaceId = this.enemyEditBox.string.trim();
     },
 
     getRandPos(){
